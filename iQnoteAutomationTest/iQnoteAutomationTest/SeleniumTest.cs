@@ -308,6 +308,12 @@ namespace iQnoteAutomationTest
             driver.Quit();
         }
 
+        [OneTimeTearDownAttribute]
+        public void TearDownTest()
+        {
+            driver.Dispose();
+        }
+
         // niet vergeten om foutieve/geen verificatie code te testen!!!!!!!!!!
     }
     
