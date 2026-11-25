@@ -177,7 +177,7 @@ namespace iQnoteAutomationTest
         {
             //Arrange 
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
-            string base32Secret = "CT2RIZEFHH7X2NZCAS6ONBCXWL2MMHBK";
+            string base32Secret = "removed for security reasons";
             var secret = Base32Encoding.ToBytes(base32Secret);
             var totp = new Totp(secret);
             string identification_code = totp.ComputeTotp();
@@ -193,7 +193,7 @@ namespace iQnoteAutomationTest
 
             //Assert
             //Assert.That(landing_page.Text, Is.EqualTo("Afspraken voor vandaag"));
-            Assert.That(landing_page.Text, Is.EqualTo("Alle Notarissen\r\nHans van de Laar\r\nYassine Abdelkhalak\r\nErik Lucas\r\nBryan Huber\r\nNicole Jolanda van 't Hull\r\nJeroen\r\nBrenda van Hees\r\nWouter Sloothaak\r\nJason Ntezicimpa\r\nVincent Notaris\r\nBram Nijenkamp\r\nFilippa Ruiter\r\nKim Snels\r\nJeroen\r\nTest"));
+            Assert.That(landing_page.Text, Is.EqualTo("Alle Notarissen Test"));
 
 
 
