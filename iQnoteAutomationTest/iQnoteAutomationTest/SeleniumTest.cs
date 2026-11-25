@@ -131,7 +131,7 @@ namespace iQnoteAutomationTest
             IWebElement login_button = wait.Until(e => e.FindElement(By.Id("_df_12")));
 
 
-            string jsonString = File.ReadAllText("credentials.json");
+            string jsonString = File.ReadAllText("some file");
             // Deserialize to object
             login_info info = JsonSerializer.Deserialize<login_info>(jsonString);
 
